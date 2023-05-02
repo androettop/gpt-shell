@@ -1,0 +1,29 @@
+{
+  "name": "gpt-shell",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "npm run build && node lib/index.js",
+    "dev": "nodemon",
+    "build": "rm -rf ./lib && tsc && chmod +x ./lib/index.js"
+  },
+  "bin": {
+    "g": "./lib/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "chalk": "^4.1.2",
+    "markdown-it": "^13.0.1",
+    "markdown-it-terminal": "^0.4.0",
+    "openai": "^3.2.1"
+  }
+}
